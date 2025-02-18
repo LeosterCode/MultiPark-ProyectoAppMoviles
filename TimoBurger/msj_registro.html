@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <!-- Poppins Font -->
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+        rel='stylesheet'>
+    <title>Registro Completado</title>
+    <style>
+        .table {
+            background-color: #06061f;
+            opacity: 1;
+            background-image: repeating-linear-gradient(45deg, #f75945 25%, transparent 25%, transparent 75%, #f75945 75%, #f75945), repeating-linear-gradient(45deg, #f75945 25%, #06061f 25%, #06061f 75%, #f75945 75%, #f75945);
+            background-position: 0 0, 4px 4px;
+            background-size: 8px 8px;
+
+        }
+
+        h1 {
+            font-weight: 200;
+            margin: 0;
+            color: white;
+            background-color: black;
+        }
+
+        .msg {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .password {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 200;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table class='table'>
+        <tr>
+            <td>
+                <div class='mail'>
+                    <h1>Bienvenido $nombre_cliente</h1>
+                    <p class='msg'></p><br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Tus datos son los siguientes:</p>
+                <ul>
+                    <li>Numero de cuenta: <strong>$numero_cuenta</strong></li>
+                    <li>Nombre: <strong>$nombre_cliente</strong></li>
+                    <li>Correo: <strong>$correo</strong></li>
+                    <li>Tipo de cuenta: <strong>$tipo_cuenta</strong></li>
+                </ul>
+            </td>
+        <tr>
+            <td>
+                <p class='msg'>Podras acceder a tu cuenta con la contrasena:</p>
+                <p class='password'>$password</p>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+</body>
+
+</html>

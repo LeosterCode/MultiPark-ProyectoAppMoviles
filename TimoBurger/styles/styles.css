@@ -1,0 +1,118 @@
+/* Estilos Navbar */
+.navbar .navbar-brand .logo {
+    width: clamp(4rem, 5vw, 7vw);
+}
+
+.navbar .container-fluid .collapse .bttnsNav {
+    color: #fee7d0;
+}
+
+.navbar .container-fluid .collapse .bttnsNav:hover {
+    color: #fa8715;
+}
+
+.btnAct{
+    color: #fa8715;
+
+}
+.btnAct:hover{
+    color: #fa8715;
+
+}
+
+.navAnuncios {
+    height: clamp (1rem, 6vh, 10vh);
+    background-color: #fa8715;
+}
+
+.sideBarAnuncios {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #fa8715 #f1f1f100;
+}
+
+/* Estilos Index */
+
+body {
+    background-color: #fa871533;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white #f1f1f100;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color del fondo */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color del scroll */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color al pasar el mouse */
+}
+
+/* estilos steps */
+.container .row .steps {
+    border-top: 3px solid #fa8715;
+}
+
+.btnMenu {
+    font-family: "Londrina Solid";
+    font-size: 50px;
+}
+
+.presentacion {
+    background-color: #883b2b;
+}
+
+.presentacion .row h6 {
+    font-size: clamp(2vh, 10rem, 7vh);
+    font-family: "Londrina Solid";
+
+}
+/* estilos Login y Registro */
+.forms-body {
+    background: url(../images/burgerBg.avif);
+    background-size: cover;
+    background-position: center;
+
+}
+.sesion-body {
+    background: url(../images/burgerBg.avif);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.forms-body .text-form{
+    font-family: "Londrina Solid";
+    
+}
+
+.forms-body .container{
+    background-color: #212529cf;
+}
+.forms-body .container .producto{
+    font-family: "Londrina Solid";
+    color: #f67e00;
+    font-size: 25px;
+}
+.forms-body .container .tipoProd{
+    font-family: "Londrina Solid";
+    background-color: #ffbc2d;
+    font-size: 30px;
+}
+
+
