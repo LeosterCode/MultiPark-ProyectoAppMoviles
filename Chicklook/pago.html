@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <h1>Finalizar Compra</h1>
+    </header>
+
+    <section class="pago-container">
+        <form id="form-pago">
+            <label for="nombre">Nombre en la tarjeta:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="tarjeta">Número de tarjeta:</label>
+            <input type="text" id="tarjeta" maxlength="16" required>
+
+            <label for="exp">Fecha de expiración:</label>
+            <input type="month" id="exp" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" maxlength="3" required>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('form-pago').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Simular pago exitoso
+            alert("Pago realizado con éxito. Se ha enviado el ticket a tu correo.");
+
+            // Redirigir a la página de ticket
+            window.location.href = "ticket.html";
+        });
+    </script>
+</body>
+
+</html>

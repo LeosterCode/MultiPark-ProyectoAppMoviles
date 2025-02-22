@@ -17,3 +17,86 @@ section{
 /* nav aside p {
     font-family: monospace;
 } */
+
+#valores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+#valores {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que las tarjetas se apilen */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  width: 220px;
+  min-height: 250px; 
+  background: rgb(205, 235, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 20px; 
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  background-color: rgb(17, 17, 18);
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.card:hover {
+  color: white;
+}
+
+.card:hover::after {
+  content: attr(data-text);
+  font-size: 18px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
