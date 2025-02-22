@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <section class="advertisement">
+        <div class="advertisement-content">
+            <p>¡Ofertas Exclusivas! No te pierdas nuestros descuentos. <a href="#">¡Compra ahora!</a></p>
+        </div>
+        <div class="advertisement-content">
+            <p>¡Lo mejor de lo mejor! Ropa ideal para toda la familia. <a href="#">¡Compra ahora!</a></p>
+        </div>
+    </section>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">chicklook</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" id="productos-btn">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="niños.html">Niños</a></li>
+                            <li><a href="mujeres.html">Mujeres</a></li>
+                            <li><a href="bebes.html">Bebés</a></li>
+                            <li><a href="hombres.html">Hombres</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="perfil.php">Perfil</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar ...">
+                <button id="search-btn">Buscar</button>
+            </div>
+        </div>
+        <video class="fullscreen-video" controls autoplay muted loop>
+            <source src="images/Video Promocional Marca Chilena Streetwear (Spot Publicitario).mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+
+
+    </header>
+
+
+    <section class="ofert container" id="ofertas">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/ni.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Niños y Niñas</h3>
+                <a href="niños.html" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/mujeres.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Mujeres</h3>
+                <a href="mujeres.html" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/bebes.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Bebés</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="images/b1.jpg" alt="">
+            <h3>Consejos para combinar outfits según la temporada</h3>
+            <p>
+                ¿No sabes cómo vestir en cada estación del año? Te enseñamos cómo combinar colores y prendas para lucir
+                increíble en cualquier clima. ¡Descubre nuestras recomendaciones de moda para cada temporada!
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/b2.jpg" alt="">
+            <h3>Las últimas tendencias en moda para 2025</h3>
+            <p>
+                Este año trae nuevas tendencias en moda. Desde colores vibrantes hasta estilos minimalistas, te contamos
+                todo lo que necesitas saber para estar a la vanguardia. ¡Actualiza tu guardarropa con lo último en moda!
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/b3.jpg" alt="">
+            <h3>Cómo elegir la talla perfecta al comprar ropa en línea</h3>
+            <p>
+                Comprar ropa en línea puede ser complicado si no sabes tu talla exacta. Te damos consejos prácticos
+                para
+                medir tu cuerpo correctamente y elegir la talla adecuada en cada prenda.
+            </p>
+        </div>
+
+    </section>
+    <div id="sidebar" class="sidebar">
+        <button id="closeSidebar">✖</button>
+        <div class="ad">
+            <img src="images/envio.jpg" alt="Envío gratis">
+            <p>¡Envío gratis en compras mayores a $50!</p>
+        </div>
+        <div class="ad">
+            <img src="images/coleccion.jpeg" alt="Nueva Colección">
+            <p>Descubre nuestra nueva colección de verano.</p>
+        </div>
+        <div class="ad">
+            <img src="images/descuento.png" alt="Descuento">
+            <p>Suscríbete y obtén un 10% de descuento</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("closeSidebar").addEventListener("click", function () {
+            document.getElementById("sidebar").style.display = "none";
+        });
+
+        const ads = [
+            { img: "images/vestidos.jpg", text: "¡Oferta especial en vestidos!" },
+            { img: "images/envio.jpg", text: "Envío gratis en compras mayores a $50" },
+            { img: "images/descuento.png", text: "Suscríbete y obtén un 10% de descuento" },
+            { img: "images/coleccion.jpeg", text: "Descubre nuestra nueva colección" }
+        ];
+
+        function cambiarAnuncio() {
+            const adElements = document.querySelectorAll('.ad');
+            adElements.forEach((ad, index) => {
+                const adData = ads[(index + Math.floor(Math.random() * ads.length)) % ads.length];
+                ad.querySelector('img').src = adData.img;
+                ad.querySelector('img').alt = adData.text;
+                ad.querySelector('p').innerText = adData.text;
+            });
+        }
+
+        setInterval(cambiarAnuncio, 5000); // Cambia cada 5 segundos
+    </script>
+    <script>
+        document.getElementById('search-btn').addEventListener('click', function () {
+            let filter = document.getElementById('search').value.toLowerCase().trim(); // Convertir a minúsculas y eliminar espacios
+
+            // Diccionario de términos clave y sus respectivas páginas
+            let paginas = {
+                "niños": "niños.html",
+                "mujeres": "mujeres.html",
+                "bebés": "bebes.html",
+                "hombres": "hombres.html"
+            };
+
+            // Verifica si la palabra ingresada coincide con alguna clave del diccionario
+            if (paginas[filter]) {
+                window.location.href = paginas[filter]; // Redirigir a la página correspondiente
+            } else {
+                alert("No se encontraron resultados para: " + filter); // Mensaje si no coincide con ninguna página
+            }
+        });
+    </script>
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Acerca de Nosotros</h3>
+                <ul>
+                    <li><a href="#">Tienda de moda <br> dedicada a ofrecerte <br> las mejores tendencias <br>en ropa
+                            para todas<br> las edades.</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="https://wa.link/1uupww">WhatsApp</a></li>
+                    <li><a href="mailto:eduardo24lopez12@gmail.com">Correo</a></li>
+                    <li><a href="https://www.facebook.com/lalo.lopez.96387189">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href=""> Términos y Condiciones</a></li>
+                    <li><a href=""> Política de Privacidad</a></li>
+                    <li><a href=""> Envíos y Devoluciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>

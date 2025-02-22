@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="advertisement">
+        <div class="advertisement-content">
+            <p>¡Ofertas Exclusivas! No te pierdas nuestros descuentos. <a href="#">¡Compra ahora!</a></p>
+        </div>
+        <div class="advertisement-content">
+            <p>¡Lo mejor de lo mejor! Ropa ideal para toda la familia. <a href="#">¡Compra ahora!</a></p>
+        </div>
+    </section>
+    <header class="header">
+        <div class="menu container">
+            <a href="pagina1.html" class="logo">chicklook</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="pagina1.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="productos-btn">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="niños.html">Niños</a></li>
+                            <li><a href="bebes.html">Bebés</a></li>
+                            <li><a href="mujeres.html">Mujeres</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="perfil.php">Perfil</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/hombres.jpg" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Hombres</h1>
+                <p>Estrena las mejores prendas</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f2.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f3.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 3</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2> Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="images/1.png" alt="">
+                <div class="product-txt">
+                    <h3>Blusa manga larga</h3>
+                    <p>Roja unitalla</p>
+                    <p class="precio">$150</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/2.png" alt="">
+                <div class="product-txt">
+                    <h3>Mayon para gimnasio</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$180</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/3.png" alt="">
+                <div class="product-txt">
+                    <h3>Vestido estilo vaquero</h3>
+                    <p>Color negro</p>
+                    <p class="precio">$350</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/4.png" alt="">
+                <div class="product-txt">
+                    <h3>Vestido Jumper de Tirantes</h3>
+                    <p>Color gris</p>
+                    <p class="precio">$230</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/5.png" alt="">
+                <div class="product-txt">
+                    <h3>Abrigo largo</h3>
+                    <p>Café, calidad premium</p>
+                    <p class="precio">$400</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/6.png" alt="">
+                <div class="product-txt">
+                    <h3>Invisible Thong retailer</h3>
+                    <p>3 Pack Second Skin</p>
+                    <p class="precio">$150</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6"> Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Productos 100% Garantizados</h3>
+                <p>
+                    Si no estás satisfecho, tienes cambios y devoluciones sin complicaciones.
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Diferentes Métodos de Pago</h3>
+                <p>
+                    Paga con tarjeta, PayPal o transferencia bancaria de manera segura.
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Envíos a Todo el País</h3>
+                <p>
+                    Recibe tu pedido en tiempo récord con nuestra entrega rápida y segura.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="images/h1.jpg" alt="">
+            <h3>Consejos para combinar outfits según la temporada</h3>
+            <p>
+                ¿No sabes cómo vestir en cada estación del año? Te enseñamos cómo combinar colores y prendas para lucir
+                increíble en cualquier clima. ¡Descubre nuestras recomendaciones de moda para cada temporada!
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/h2.jpg" alt="">
+            <h3>Las últimas tendencias en moda para 2025</h3>
+            <p>
+                Este año trae nuevas tendencias en moda. Desde colores vibrantes hasta estilos minimalistas, te contamos
+                todo lo que necesitas saber para estar a la vanguardia. ¡Actualiza tu guardarropa con lo último en moda!
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/h3.jpg" alt="">
+            <h3>Cómo elegir la talla perfecta al comprar ropa en línea</h3>
+            <p>
+                Comprar ropa en línea puede ser complicado si no sabes tu talla exacta. Te damos consejos prácticos para
+                medir tu cuerpo correctamente y elegir la talla adecuada en cada prenda.
+            </p>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Acerca de Nosotros</h3>
+                <ul>
+                    <li><a href="#">Tienda de moda <br> dedicada a ofrecerte <br> las mejores tendencias <br>en ropa
+                            para todas<br> las edades.</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="https://wa.link/1uupww">WhatsApp</a></li>
+                    <li><a href="mailto:eduardo24lopez12@gmail.com">Correo</a></li>
+                    <li><a href="https://www.facebook.com/lalo.lopez.96387189">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href=""> Términos y Condiciones</a></li>
+                    <li><a href=""> Política de Privacidad</a></li>
+                    <li><a href=""> Envíos y Devoluciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>
