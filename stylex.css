@@ -1,9 +1,30 @@
 nav{
     background: #ffffff57;
+    transition: all 0.7s;
+
 }
+
+
 
 nav div li{
     display: block;
+    
+}
+
+.abajo{
+    color: white;
+    background: #282828;
+    padding: 0 auto;
+
+}
+.abajo aside p span{
+    color: white;
+    transition: all 0.7s;
+}
+.abajo li a{
+    color: white;
+    transition: all 0.7s;
+
 }
 
 header{
