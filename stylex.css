@@ -38,17 +38,42 @@ nav ul li .nav-link:hover{
 
 }
 
-/* TERMINAN ESTILOS DE NABVAR */
+/* Termina Zona: Estilos Navbar
+================================ */
 
-header{
-    height: 100vh;
-    opacity: .8;
+/*  =======================
+    Zona: Estilos de Header
+    =======================*/
+.header{
+    position: relative;
+   
+    overflow: hidden;
 }
+
+
+.textHeader{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #28282879;
+    padding: 10%;
+
+}
+
+
+.imageHeader{
+    height: 100%;
+}
+
 section{
     height: 100vh;
 }
+/* Termina Zona: Estilos Header
+================================ */
 
-
+/*  =======================
+    Zona: Estilos de valores
+    =======================*/
 #valores-container {
   display: flex;
   flex-direction: column;
@@ -56,8 +81,6 @@ section{
   text-align: center;
   padding: 20px;
 }
-
-
 
 #valores {
   display: flex;
@@ -131,3 +154,85 @@ section{
   justify-content: center;
   text-align: center;
 }
+
+/* Termina Zona: Estilos Valores
+================================ */
+
+/*============================
+    Zona: Estilos Tipo Negocio
+=============================*/
+
+#tNegocios{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.tNegociostitle{
+    display: 1;
+}
+.tNegociostitle h2{
+    font-size: 25px;
+    margin-bottom: -5px;
+    color: rgb(53, 53, 53);
+}
+.tNegociostitle h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(228, 41, 41);
+}
+#tNegocios section{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 2%;
+    align-items: center;
+    width: 100%;
+    height: 45vh;
+    margin-top: 5vh;
+}
+.tNegocioscard{
+    width: 20%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(255, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+.tNegocioscard h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.tNegocioscard:nth-child(1) img{
+    width: 50%;
+    height: auto;
+}
+.tNegocioscard:nth-child(2) img{
+    width: auto;
+    height: 30%;
+}
+.tNegocioscard:nth-child(3) img{
+    width: auto;
+    height: 30%;
+}
+.tNegocioscard:nth-child(4) img{
+    width: 50%;
+    height: auto;
+}
+.tNegocioscard img{
+    transition: 180ms all ease-in-out;
+}
+.tNegocioscard img:hover{
+    transform: scale(1.1);
+}
+/* Termina Zona: Estilos Tipo Negocio
+===================================== */
