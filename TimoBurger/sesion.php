@@ -92,6 +92,7 @@ if (isset($_POST['pedir'])) {
                             <h3 class="text-center tipoProd">Hamburguesas</h3>
                             <div class="mb-3 d-flex justify-content-between align-items-center">
                                 <p class="producto">Hamburguesa especial</p>
+                                <p>sfadafdsd</p>
                                 <input value="0" type="number" class="p-2" id="hEspecial" name="hEspecial" min="1" max="100" style="height: 30px;">
                             </div>
                             <div class="mb-3 d-flex justify-content-between">

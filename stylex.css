@@ -2,8 +2,13 @@ nav{
     background: #ffffff57;
 }
 
+nav div li{
+    display: block;
+}
+
 header{
     height: 100vh;
+    opacity: .8;
 }
 section{
     height: 100vh;
