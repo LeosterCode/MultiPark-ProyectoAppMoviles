@@ -1,17 +1,53 @@
+/*  =======================
+    Zona: Estilos de Navbar
+    =======================*/
 nav{
     background: #ffffff57;
+    transition: all 0.7s;
+
 }
+
+nav div li{
+    display: block;
+    
+}
+
+nav ul li a{
+    color: #282828;
+    transition: all 0.7s;
+    
+}
+nav ul li .nav-link:hover{
+    color: red;
+
+}
+
+.abajo{
+    color: white;
+    background: #282828;
+
+}
+.abajo aside p span{
+    color: white;
+    transition: all 0.7s;
+}
+.abajo li a{
+    color: white;
+    transition: all 0.7s;
+    
+
+}
+
+/* TERMINAN ESTILOS DE NABVAR */
 
 header{
     height: 100vh;
+    opacity: .8;
 }
 section{
     height: 100vh;
 }
 
-/* nav aside p {
-    font-family: monospace;
-} */
 
 #valores-container {
   display: flex;
@@ -31,7 +67,7 @@ section{
   align-items: center;
 }
 
-h2 {
+#valores-container h2 {
   margin-bottom: 20px;
 }
 
