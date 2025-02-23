@@ -1,40 +1,43 @@
 /*  =======================
     Zona: Estilos de Navbar
     =======================*/
-nav{
-    background: #ffffff57;
+nav {
+    background: #ffffff15;
     transition: all 0.7s;
 
 }
 
-nav div li{
+nav div li {
     display: block;
-    
+
 }
 
-nav ul li a{
+nav ul li a {
     color: #282828;
     transition: all 0.7s;
-    
+
 }
-nav ul li .nav-link:hover{
+
+nav ul li .nav-link:hover {
     color: red;
 
 }
 
-.abajo{
+.abajo {
     color: white;
     background: #282828;
 
 }
-.abajo aside p span{
+
+.abajo aside p span {
     color: white;
     transition: all 0.7s;
 }
-.abajo li a{
+
+.abajo li a {
     color: white;
     transition: all 0.7s;
-    
+
 
 }
 
@@ -44,14 +47,14 @@ nav ul li .nav-link:hover{
 /*  =======================
     Zona: Estilos de Header
     =======================*/
-.header{
+.header {
     position: relative;
-   
+
     overflow: hidden;
 }
 
 
-.textHeader{
+.textHeader {
     height: 100%;
     position: absolute;
     top: 0;
@@ -61,98 +64,122 @@ nav ul li .nav-link:hover{
 }
 
 
-.imageHeader{
+.imageHeader {
     height: 100%;
 }
 
-section{
+section {
     height: 100vh;
 }
+
 /* Termina Zona: Estilos Header
+================================ */
+
+/*  =======================
+    Zona: Estilos de Footer
+    =======================*/
+footer {
+    background: rgb(40, 40, 40);
+    background: linear-gradient(0deg, rgba(40, 40, 40, 1) 52%, rgba(40, 40, 40, 0.7233018207282913) 80%, rgba(45, 189, 253, 0) 100%);
+    color: white;
+    padding: 80px 50px;
+
+}
+
+/* Termina Zona: Estilos Footer
 ================================ */
 
 /*  =======================
     Zona: Estilos de valores
     =======================*/
 #valores-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 #valores {
-  display: flex;
-  flex-wrap: nowrap; /* Evita que las tarjetas se apilen */
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    /* Evita que las tarjetas se apilen */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-#valores-container h2 {
-  margin-bottom: 20px;
+#valores-container h1 {
+    font-size: 50px;
+    margin: 60px 0px;
+    font-weight: 800;
+    color: rgb(228, 41, 41);
 }
 
 .card {
-  position: relative;
-  width: 220px;
-  min-height: 250px; 
-  background: rgb(205, 235, 234);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  padding: 20px; 
-  text-align: center;
-  transition: all 0.5s;
+    position: relative;
+    width: 220px;
+    min-height: 250px;
+    background: rgb(205, 235, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s;
+    
+    
 }
 
 .card::before,
 .card::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 20%;
-  background-color: rgb(17, 17, 18);
-  transition: all 0.5s;
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    background-color: rgb(17, 17, 18);
+    transition: all 0.5s;
 }
 
 .card::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
 }
 
 .card::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 15px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
 }
 
 .card:hover::before,
 .card:hover::after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgb(228, 41, 41);
 }
 
 .card:hover {
-  color: white;
+    color: white;
+    font-weight:normal;
+    
 }
 
 .card:hover::after {
-  content: attr(data-text);
-  font-size: 18px;
-  padding: 15px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    content: attr(data-text);
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Termina Zona: Estilos Valores
@@ -162,7 +189,7 @@ section{
     Zona: Estilos Tipo Negocio
 =============================*/
 
-#tNegocios{
+#tNegocios {
     position: relative;
     width: 100%;
     height: 75vh;
@@ -173,20 +200,24 @@ section{
     text-align: center;
     flex-direction: column;
 }
-.tNegociostitle{
+
+.tNegociostitle {
     display: 1;
 }
-.tNegociostitle h2{
+
+.tNegociostitle h2 {
     font-size: 25px;
     margin-bottom: -5px;
     color: rgb(53, 53, 53);
 }
-.tNegociostitle h1{
+
+.tNegociostitle h1 {
     font-size: 50px;
     font-weight: 800;
     color: rgb(228, 41, 41);
 }
-#tNegocios section{
+
+#tNegocios section {
     display: flex;
     position: relative;
     justify-content: center;
@@ -196,7 +227,8 @@ section{
     height: 45vh;
     margin-top: 5vh;
 }
-.tNegocioscard{
+
+.tNegocioscard {
     width: 20%;
     height: 80%;
     border-radius: 10px;
@@ -208,31 +240,39 @@ section{
     align-items: center;
     gap: 3vh;
 }
-.tNegocioscard h2{
+
+.tNegocioscard h2 {
     font-size: 20px;
     font-weight: 700;
 }
-.tNegocioscard:nth-child(1) img{
+
+.tNegocioscard:nth-child(1) img {
     width: 50%;
     height: auto;
 }
-.tNegocioscard:nth-child(2) img{
+
+.tNegocioscard:nth-child(2) img {
     width: auto;
     height: 30%;
 }
-.tNegocioscard:nth-child(3) img{
+
+.tNegocioscard:nth-child(3) img {
     width: auto;
     height: 30%;
 }
-.tNegocioscard:nth-child(4) img{
+
+.tNegocioscard:nth-child(4) img {
     width: 50%;
     height: auto;
 }
-.tNegocioscard img{
+
+.tNegocioscard img {
     transition: 180ms all ease-in-out;
 }
-.tNegocioscard img:hover{
+
+.tNegocioscard img:hover {
     transform: scale(1.1);
 }
+
 /* Termina Zona: Estilos Tipo Negocio
 ===================================== */
