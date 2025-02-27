@@ -120,17 +120,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
 
-        .container-carrossel {
-    perspective: 1500px;
+.container-carrossel {
+  perspective: 3000px;
+  margin: 45px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  @media (width <= 700px ){
+    width: 65%;
+    overflow: hidden;
+  }
 }
 
-.carrossel {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    transform-style: preserve-3d;
+@keyframes rotateCarrossel {
+  from {
     transform: rotateY(0deg);
-    transition: transform 0.5s ease-out;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.carrossel {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-right: 50000px;
+  transform-style: preserve-3d;
+  animation: rotateCarrossel 10s infinite linear; /* Añadido para rotar el carrusel automáticamente */
+  @media (width <= 700px ){
+    margin-right: 0px;
+  }
 }
 
 .carrossel-item {
@@ -161,6 +180,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 .carrossel-item:nth-child(5) { transform: rotateY(205.72deg) translateZ(300px); }
 .carrossel-item:nth-child(6) { transform: rotateY(257.15deg) translateZ(300px); }
 .carrossel-item:nth-child(7) { transform: rotateY(308.58deg) translateZ(300px); }
+
+@media (max-width: 700px) {
+    video {
+        height: 200px;
+    }
+}
 
     </style>
 </head>
