@@ -143,7 +143,7 @@
     
     </style>
 </head>
-<body style="">
+<body >
 <nav class="navbar navbar-expand-lg" style="background-color:rgb(33, 33, 34);">
     <div class="container-fluid">
         <a class="navbar-brand" href="mariano.php">
@@ -217,9 +217,8 @@ No solo contamos con hamburguesas, también ofrecemos una amplia variedad de opc
     <h1>Ubicacion</h1><br>
     <br>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.054062032376!2d-77.036871!3d38.897676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzgnMzAnMTIuMiJOIDc3wr4jNjgnMjA!5e0!3m2!1ses!2sus!4v1592769454350!5m2!1ses!2sus"
-    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.054062032376!2d-77.036871!3d38.897676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzgnMzAnMTIuMiJOIDc3wr4jNjgnMjA!5e0!3m2!1ses!2sus!4v1592769454350!5m2!1ses!2sus" width="300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
 
 
 </div>
