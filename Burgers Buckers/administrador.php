@@ -133,6 +133,10 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             .tabla {
                 padding: 20px;
             }
+
+            input[type="file"]{
+                width: 150px;
+            }
         }
         /* General */
         
