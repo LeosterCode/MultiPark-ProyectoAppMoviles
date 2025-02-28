@@ -150,3 +150,20 @@ button {
 .btn {
   color: white;
 }
+
+/* Estilo general del iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block; /* Asegura que el iframe no tenga márgenes automáticos */
+  max-width: 100%;
+  max-height: 450px;
+}
+
+/* Ocultar el iframe cuando el ancho de la pantalla sea menor o igual a 700px */
+@media (max-width: 700px) {
+  iframe {
+    display: none; /* Oculta el iframe */
+  }
+}
