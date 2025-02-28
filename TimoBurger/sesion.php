@@ -12,8 +12,8 @@ if (isset($_POST['pedir'])) {
     $direccion = $_POST['direccion'];
     $direccion = $_POST['direccion'];
     if (!empty($nombre) && !empty($descripcion)) {
-        $pedir = $cnnPDO->prepare('INSERT INTO pedidos (clienteId, descripcion, direccion) VALUES (?, ?, ?)');
-        $pedir->execute([$clienteId, $nombre, $descripcion]);
+        $pedir = $cnnPDO->prepare('INSERT INTO pedidos (clienteId, direccion) VALUES (?, ?, ?)');
+        $pedir->execute([$clienteId, $nombre, $descripcion ]);
     }
 }
 
