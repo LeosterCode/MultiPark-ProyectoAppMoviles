@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="stylex.css">
     <title>Grupo MultiPark</title>
     <link rel="shortcut icon" href="images/LogoMultiparkNoBg.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 </head>
 
@@ -76,28 +75,30 @@
         </div>
     </header>
     <main>
-        <section class="us" id="nosotros">
-            <div class="headingus">
-                <h1>Sobre nosotros</h1>
+        <section id="nosotros" class="py-12">
+            <div class="text-center mb-8">
+                <h1 class="text-6xl font-bold text-red-600">Sobre nosotros</h1>
             </div>
-            <div class="contenedorus">
-                <div class="us-contenido">
-                    <h2>Bienvenido a Grupo MultiPark</h2>
-                    <p>Somos una empresa de vanguardia con una sólida presencia en múltiples sectores,
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Bienvenido a Grupo MultiPark</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Somos una empresa de vanguardia con una sólida presencia en múltiples sectores,
                         incluyendo alimentos, reparaciones, moda y automóviles.
                         Nos especializamos en ofrecer productos y servicios de alta calidad, combinando innovación,
-                        eficiencia y
-                        un compromiso constante con la satisfacción de nuestros clientes. ¡Descubre todo lo que tenemos
-                        para ti y vive la diferencia con
-                        nosotros!</p>
+                        eficiencia y un compromiso constante con la satisfacción de nuestros clientes.
+                        ¡Descubre todo lo que tenemos para ti y vive la diferencia con nosotros!
+                    </p>
                 </div>
-                <div class="imageus">
+                <div class="flex justify-center">
                     <img id="socios"
+                        class="rounded-lg shadow-lg w-full md:w-auto max-h-[350px] object-cover"
                         src="https://image.freepik.com/foto-gratis/dos-hombres-negocios-confia-estrechar-mano-reunion-oficina-exito-trato-saludo-concepto-socio_1423-198.jpg"
                         alt="socios">
                 </div>
             </div>
         </section>
+        
         <section id="tNegocios">
             <div class="tNegociostitle">
                 <h2>Grupo MultiPark</h2>
