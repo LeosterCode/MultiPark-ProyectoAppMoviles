@@ -25,31 +25,45 @@ if (!isset($_SESSION['user_id'])) {
 
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-    <div class="divlogo">
-        <img src="images/logocar.png" alt="logocar" width="60px">
-    </div>
-        <a class="navbar-brand" href="#nosotros">Nosotros</a>
-        <a class="navbar-brand" href="#usados">Usados</a>
-        <a class="navbar-brand" href="#nuevos">Nuevos</a>
-        <a class="navbar-brand" href="#taller">Taller</a>
-        <a class="navbar-brand" href="#contacto">Contáctanos</a>
-        
-        <form class="d-flex" role="search" action="buscar.php" method="GET">
-            <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger" type="submit">Search</button>
-        </form>
-
-        <div>
-            <button class="btn btn-success">
-                <a href="carrito.php" style="color: white;">Carrito</a>
+        <div class="container-fluid">
+            <div class="divlogo me-2">
+                <img src="images/logocar.png" alt="logocar" width="60" height="auto">
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="btn btn-danger">
-                <a href="logout.php" style="color: white;">Cerrar Sesión</a>
-            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usados">Usados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nuevos">Nuevos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#taller">Taller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contáctanos</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex mb-3 mb-lg-0 me-lg-3" role="search" action="buscar.php" method="GET">
+                    <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+                
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="carrito.php" class="btn btn-success">Carrito</a>
+                    <a href="logout.php" class="btn btn-danger">Cerrar Sesión</a>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </nav>
 </header>
 
@@ -109,10 +123,14 @@ if (!isset($_SESSION['user_id'])) {
                         ¡Tu próximo viaje comienza aquí!</h4>
                         <br>
                         <center>
-                            <video width="600" autoplay loop muted controls>
-                                <source src="images/video.mp4" type="video/mp4"></source>
-                                Tu navegador no puede repoducir el video
-                            </video>
+                        <div class="container mt-4">
+                            <div class="ratio ratio-16x9">
+                                <video autoplay loop muted controls>
+                                    <source src="images/video.mp4" type="video/mp4">
+                                    Tu navegador no puede reproducir el video.
+                                </video>
+                            </div>
+                        </div>
                         </center>
                 </section>
                 <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
