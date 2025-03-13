@@ -203,17 +203,22 @@ footer {
 #tNegocios {
     position: relative;
     width: 100%;
-    height: 75vh;
     margin: auto;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
+#tNegocios div{
+    display: flex;
+}
 
 .tNegociostitle {
-    display: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
 }
 
 .tNegociostitle h2 {
@@ -228,11 +233,11 @@ footer {
     color: rgb(228, 41, 41);
 }
 
-#tNegocios section {
+#tNegocios div section {
     display: flex;
     position: relative;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
     align-items: center;
     width: 100%;
     height: 45vh;
@@ -240,7 +245,7 @@ footer {
 }
 
 .tNegocioscard {
-    width: 20%;
+    width: 45%;
     height: 80%;
     border-radius: 10px;
     background-color: white;
@@ -438,6 +443,9 @@ body {
     .textHeader p{
         display: none;
     }
+    #tNegocios div{
+        flex-direction: column;
+    }
   }
   
   @media (max-width: 480px) {
@@ -455,6 +463,7 @@ body {
     footer .footer-list li{
         margin-right: 6px;
     }
+    
   }
   
 
