@@ -14,7 +14,7 @@
 
 <body>
     <nav id="nav" class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid d-flex">
+        <div class="container-fluid d-flex p-0">
             <aside class="navbar-brand d-flex p-0">
                 <span>
                     <img src="images/LogoMultiparkNoBg.png" width="55px" alt="">
@@ -62,14 +62,15 @@
                 <div class="col-12 imageHeader p-0">
                     <img src="images/portadaHeader.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-12 text-white textHeader">
+                <div class="col-12 text-white textHeader d-flex flex-column jutify-content-center align-center px-0 pt-5">
                     <h2 class="display-5">Bienvenido a</h2>
                     <h1 class="display-1 fw-medium">Grupo MultiPark</h1>
-                    <p class="fs-4">Somos una empresa líder con diversas líneas de negocio en alimentos, <br>
+                    <p class="fs-4 m-0">Somos una empresa líder con diversas líneas de negocio en alimentos, <br>
                         reparaciones, moda y
                         automóviles. Descubre cómo podemos brindar calidad, <br>innovación y entretenimiento para toda
                         tu
-                        familia.</p>
+                        familia.
+                    </p>
                 </div>
 
             </div>
@@ -80,8 +81,8 @@
             <div class="headingus">
                 <h1>Sobre nosotros</h1>
             </div>
-            <div class="contenedorus">
-                <div class="us-contenido">
+            <div class="contenedorus row">
+                <div class="us-contenido col-md-6 col-12 p-3 m-0">
                     <h2>Bienvenido a Grupo MultiPark</h2>
                     <p>Somos una empresa de vanguardia con una sólida presencia en múltiples sectores,
                         incluyendo alimentos, reparaciones, moda y automóviles.
@@ -91,7 +92,7 @@
                         para ti y vive la diferencia con
                         nosotros!</p>
                 </div>
-                <div class="imageus">
+                <div class="imageus col-md-6 col-12">
                     <img id="socios"
                         src="https://image.freepik.com/foto-gratis/dos-hombres-negocios-confia-estrechar-mano-reunion-oficina-exito-trato-saludo-concepto-socio_1423-198.jpg"
                         alt="socios">
@@ -103,12 +104,12 @@
                 <h2>Grupo MultiPark</h2>
                 <h1>Tipos de negocios.</h1>
             </div>
-            <section>
+            <section class="">
                 <div class="tNegocioscard">
                     <img src="images/tNegocios/car.png" alt="">
                     <h2>Vehículos</h2>
                 </div>
-                <div class="tNegocioscard">
+                <div class="tNegocioscard ">
                     <img src="images/tNegocios/phone.png" alt="">
                     <h2>Celulares</h2>
                 </div>
@@ -122,7 +123,7 @@
                 </div>
             </section>
         </section>
-        <section id="valores-container" class="">
+        <section id="valores-container" class="mb-0">
 
             <h1>Nuestros Valores</h1>
             <div id="valores">
@@ -135,13 +136,13 @@
             </div>
         </section>
         <br>
-        <section id="franquicias" class="franquicias-section">
+        <section id="franquicias" class="franquicias-section pt-0">
             <div class="title">
                 <span>Franquicias</span>
                 <h2>Nuestras Franquicias</h2>
             </div>
             <div class="franquicias-container">
-                <a href="TimoBurger/index.php" class="card-link">
+                <a href="TimoBurger/index.php" class="card-link ">
                     <div class="franquicias-card">
                         <img src="TimoBurger/images/Logo.png" alt="TimoBurger">
                         <hr>
@@ -187,16 +188,9 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="px-0 pt-2">
         <div class="row">
-            <div class="col-4">
-                <p>Grupo MultiPark, Av. Industria Metalúrgica, Blvd. del Parque Industrial Francisco R. Alanis 2001,
-                    25900 Ramos Arizpe, Coah.</p>
-                <div>
-
-                </div>
-            </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-md-4 col-12 d-flex justify-content-center mb-3">
                 <span>
                     <img src="images/LogoMultiparkNoBg.png" width="100px" alt="">
                 </span>
@@ -205,14 +199,22 @@
                     <span class="fw-medium fs-3">MULTIPARK</span>
                 </p>
             </div>
-            <div class="col-4">
-                <ul>
+            <div class="col-md-4 col-12">
+                <ul class="footer-list">
                     <li class="nav-link">Alimentos</li>
                     <li class="nav-link">Reparaciones</li>
                     <li class="nav-link">Moda</li>
                     <li class="nav-link">Automóviles</li>
                 </ul>
             </div>
+            <div class="col-md-4 col-12">
+                <p>Grupo MultiPark, Av. Industria Metalúrgica, Blvd. del Parque Industrial Francisco R. Alanis 2001,
+                    25900 Ramos Arizpe, Coah.</p>
+                <div>
+
+                </div>
+            </div>
+            
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

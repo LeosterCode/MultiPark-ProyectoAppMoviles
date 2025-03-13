@@ -1,3 +1,4 @@
+
 /*  =======================
     Zona: Estilos de Navbar
     =======================*/
@@ -64,13 +65,12 @@ nav ul li .nav-link:hover {
 }
 
 
+
 .imageHeader {
     height: 100%;
 }
 
-section {
-    height: 100vh;
-}
+
 
 /* Termina Zona: Estilos Header
 ================================ */
@@ -308,7 +308,7 @@ footer {
 
 .us h2{
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: rgb(53, 53, 53);
 }
 
@@ -316,8 +316,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96%;
-    margin: 65px auto;
+   
 }
 
 .us-contenido{
@@ -436,11 +435,25 @@ body {
     .card-link {
         flex: 1 1 calc(50% - 20px); 
     }
+    .textHeader p{
+        display: none;
+    }
   }
   
   @media (max-width: 480px) {
     .card-link {
         flex: 1 1 100%; 
+    }
+
+    .textHeader p{
+        display: none;
+    }
+
+    footer .footer-list{
+        display: flex;
+    }
+    footer .footer-list li{
+        margin-right: 6px;
     }
   }
   
